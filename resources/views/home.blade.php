@@ -148,66 +148,81 @@ foreach ($prodotti as $key => $prodotto) {
   <head>
     <meta charset="utf-8">
     <title>Primi passi Laravel</title>
-    <link rel="stylesheet" href="{{asset('css/app.css')}}">
+    <link rel="stylesheet" href="{{asset('css/style.css')}}">
   </head>
   <body>
 
-    @if (!empty($lunga))
-      <div class="row lunga">
-        <h2>Pasta lunga</h2>
-          @foreach ($lunga as $key => $prodotto)
-            <div class="card">
-              <img src="{{$prodotto['src']}}" alt="{{$prodotto['titolo']}}">
-              <div class="overlay">
-                <a href="{{$key}}"><h3>{{$prodotto['titolo']}}</h3></a>
-                <a href="{{$key}}">
-                  <svg>
-                    <use href="#posate"></use>
-                  </svg>
-                </a>
-              </div>
-            </div>
-          @endforeach
-      </div>
-    @endif
+    <header>
+      <div class="container">
+        <div class="row">
+          <img src="{{asset('img/marchio-sito-test.png')}}" alt="logo molisana">
+        </div>
+        <div class="row">
 
-    @if (!empty($corta))
-      <div class="row corta">
-        <h2>Pasta corta</h2>
-          @foreach ($corta as $key => $prodotto)
-            <div class="card">
-              <img src="{{$prodotto['src']}}" alt="{{$prodotto['titolo']}}">
-              <div class="overlay">
-                <a href="{{$key}}"><h3>{{$prodotto['titolo']}}</h3></a>
-                <a href="{{$key}}">
-                  <svg>
-                    <use href="#posate"></use>
-                  </svg>
-                </a>
-              </div>
-            </div>
-          @endforeach
+        </div>
       </div>
-    @endif
+    </header>
 
-    @if (!empty($cortissima))
-      <div class="row cortissima">
-        <h2>Pasta cortissima</h2>
-          @foreach ($cortissima as $key => $prodotto)
-            <div class="card">
-              <img src="{{$prodotto['src']}}" alt="{{$prodotto['titolo']}}">
-              <div class="overlay">
-                <a href="{{$key}}"><h3>{{$prodotto['titolo']}}</h3></a>
-                <a href="{{$key}}">
-                  <svg>
-                    <use href="#posate"></use>
-                  </svg>
-                </a>
-              </div>
-            </div>
-          @endforeach
+    <main>
+      <div class="container">
+        @if (!empty($lunga))
+          <div class="row lunga">
+            <h2>Pasta lunga</h2>
+              @foreach ($lunga as $key => $prodotto)
+                <div class="card">
+                  <img src="{{$prodotto['src']}}" alt="{{$prodotto['titolo']}}">
+                  <div class="overlay">
+                    <a href="{{$key}}"><h3>{{$prodotto['titolo']}}</h3></a>
+                    <a href="{{$key}}">
+                      <svg>
+                        <use href="#posate"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              @endforeach
+          </div>
+        @endif
+
+        @if (!empty($corta))
+          <div class="row corta">
+            <h2>Pasta corta</h2>
+              @foreach ($corta as $key => $prodotto)
+                <div class="card">
+                  <img src="{{$prodotto['src']}}" alt="{{$prodotto['titolo']}}">
+                  <div class="overlay">
+                    <a href="{{$key}}"><h3>{{$prodotto['titolo']}}</h3></a>
+                    <a href="{{$key}}">
+                      <svg>
+                        <use href="#posate"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              @endforeach
+          </div>
+        @endif
+
+        @if (!empty($cortissima))
+          <div class="row cortissima">
+            <h2>Pasta cortissima</h2>
+              @foreach ($cortissima as $key => $prodotto)
+                <div class="card">
+                  <img src="{{$prodotto['src']}}" alt="{{$prodotto['titolo']}}">
+                  <div class="overlay">
+                    <a href="{{$key}}"><h3>{{$prodotto['titolo']}}</h3></a>
+                    <a href="{{$key}}">
+                      <svg>
+                        <use href="#posate"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              @endforeach
+          </div>
+        @endif
       </div>
-    @endif
+    </main>
 
   </body>
 
