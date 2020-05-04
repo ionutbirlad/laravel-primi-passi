@@ -1,7 +1,8 @@
-* {
+@import url(https://fonts.googleapis.com/css?family=Montserrat&display=swap);* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
 }
 
 .clearfix::after {
@@ -15,8 +16,85 @@
   margin: 0 auto;
 }
 
-svg {
-  width: 30px;
+header .container .row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header .container .row #logo {
   display: block;
+  margin-bottom: 30px;
+}
+
+#menu {
+  display: block;
+}
+
+#menu li {
+  display: inline-block;
+  height: 50px;
+  line-height: 50px;
+  padding: 0 10px;
+  margin-bottom: 0;
+  transition: 0.4s linear;
+}
+
+#menu li:hover {
+  background: #12CBC4;
+}
+
+#menu li a {
+  text-decoration: none;
+  color: #000000;
+}
+
+body main .row {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 280px;
+  height: 200px;
+  margin: 5px;
+  position: relative;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.card .overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: 0.4s;
+  background: #dfe6e9;
+}
+
+.card .overlay:hover {
+  opacity: 0.6;
+}
+
+.card .overlay:hover img {
+  transform: scale(1.5);
+}
+
+.card .overlay svg {
+  width: 30px;
 }
 

@@ -1,0 +1,13 @@
+header{
+  .container{
+    .row{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      #logo{
+        display: block;
+        margin-bottom: 30px;
+      }
+    }
+  }
+}

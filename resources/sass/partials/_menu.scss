@@ -1,0 +1,18 @@
+#menu{
+  display: block;
+  li{
+    display: inline-block;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 10px;
+    margin-bottom: 0;
+    transition: 0.4s linear;
+    &:hover{
+      background: $secondary_color;
+    }
+    a{
+      text-decoration: none;
+      color: $primary_font_color;
+    }
+  }
+}

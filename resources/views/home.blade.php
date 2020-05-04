@@ -155,10 +155,16 @@ foreach ($prodotti as $key => $prodotto) {
     <header>
       <div class="container">
         <div class="row">
-          <img src="{{asset('img/marchio-sito-test.png')}}" alt="logo molisana">
+          <img id="logo" src="{{asset('img/marchio-sito-test.png')}}" alt="logo molisana">
         </div>
         <div class="row">
-
+          <nav id="menu">
+            <ul>
+              <li> <a href="#">Home</a> </li>
+              <li> <a href="#">Prodotti</a> </li>
+              <li> <a href="#">News</a> </li>
+            </ul>
+          </nav>
         </div>
       </div>
     </header>
@@ -166,18 +172,18 @@ foreach ($prodotti as $key => $prodotto) {
     <main>
       <div class="container">
         @if (!empty($lunga))
+          <h2>Pasta lunga</h2>
           <div class="row lunga">
-            <h2>Pasta lunga</h2>
               @foreach ($lunga as $key => $prodotto)
                 <div class="card">
                   <img src="{{$prodotto['src']}}" alt="{{$prodotto['titolo']}}">
                   <div class="overlay">
-                    <a href="{{$key}}"><h3>{{$prodotto['titolo']}}</h3></a>
                     <a href="{{$key}}">
                       <svg>
                         <use href="#posate"></use>
                       </svg>
                     </a>
+                    {{-- <a href="{{$key}}"><h3>{{$prodotto['titolo']}}</h3></a> --}}
                   </div>
                 </div>
               @endforeach
@@ -185,18 +191,18 @@ foreach ($prodotti as $key => $prodotto) {
         @endif
 
         @if (!empty($corta))
+          <h2>Pasta corta</h2>
           <div class="row corta">
-            <h2>Pasta corta</h2>
               @foreach ($corta as $key => $prodotto)
                 <div class="card">
                   <img src="{{$prodotto['src']}}" alt="{{$prodotto['titolo']}}">
                   <div class="overlay">
-                    <a href="{{$key}}"><h3>{{$prodotto['titolo']}}</h3></a>
                     <a href="{{$key}}">
                       <svg>
                         <use href="#posate"></use>
                       </svg>
                     </a>
+                    {{-- <a href="{{$key}}"><h3>{{$prodotto['titolo']}}</h3></a> --}}
                   </div>
                 </div>
               @endforeach
@@ -204,18 +210,18 @@ foreach ($prodotti as $key => $prodotto) {
         @endif
 
         @if (!empty($cortissima))
+          <h2>Pasta cortissima</h2>
           <div class="row cortissima">
-            <h2>Pasta cortissima</h2>
               @foreach ($cortissima as $key => $prodotto)
                 <div class="card">
                   <img src="{{$prodotto['src']}}" alt="{{$prodotto['titolo']}}">
                   <div class="overlay">
-                    <a href="{{$key}}"><h3>{{$prodotto['titolo']}}</h3></a>
                     <a href="{{$key}}">
                       <svg>
                         <use href="#posate"></use>
                       </svg>
                     </a>
+                    {{-- <a href="{{$key}}"><h3>{{$prodotto['titolo']}}</h3></a> --}}
                   </div>
                 </div>
               @endforeach

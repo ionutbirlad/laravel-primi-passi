@@ -1,4 +1,17 @@
-svg{
-  width: 30px;
-  display: block;
+body{
+  main{
+    .row{
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+    }
+    // background-image: url("/img/back.jpg");
+    // background-repeat: no-repeat;
+    // background-size: contain;
+    // background-attachment: fixed;
+    .container{
+
+    }
+  }
 }
