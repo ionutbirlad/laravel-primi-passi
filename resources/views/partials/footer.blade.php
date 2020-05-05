@@ -79,4 +79,7 @@
       </div>
     </section>
   </div>
+    <div class="mountains">
+      {{-- <img src="{{asset('img/mountains.jpg')}}" alt=""> --}}
+    </div>
 </footer>
