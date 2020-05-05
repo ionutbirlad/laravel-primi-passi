@@ -1,12 +1,19 @@
 header{
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 2;
+  background: $primary_color;
   .container{
     .row{
       display: flex;
       align-items: center;
       justify-content: center;
       #logo{
+        width: 150px;
         display: block;
-        margin-bottom: 30px;
+        margin-bottom: 15px;
       }
     }
   }

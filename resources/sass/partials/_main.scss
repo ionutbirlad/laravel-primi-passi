@@ -1,17 +1,22 @@
 body{
+  padding-top: 150px;
   main{
     .row{
       display: flex;
       align-items: center;
       justify-content: flex-start;
       flex-wrap: wrap;
+      // padding: 30px 0;
     }
     // background-image: url("/img/back.jpg");
     // background-repeat: no-repeat;
-    // background-size: contain;
+    // background-size: cover;
     // background-attachment: fixed;
     .container{
-
+      .titolo{
+        padding-top: 20px;
+        color: $primary_font_color;
+      }
     }
   }
 }

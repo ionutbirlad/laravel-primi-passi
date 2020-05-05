@@ -16,6 +16,15 @@
   margin: 0 auto;
 }
 
+header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 2;
+  background: #fff;
+}
+
 header .container .row {
   display: flex;
   align-items: center;
@@ -23,8 +32,9 @@ header .container .row {
 }
 
 header .container .row #logo {
+  width: 150px;
   display: block;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
 }
 
 #menu {
@@ -49,6 +59,10 @@ header .container .row #logo {
   color: #000000;
 }
 
+body {
+  padding-top: 150px;
+}
+
 body main .row {
   display: flex;
   align-items: center;
@@ -56,11 +70,21 @@ body main .row {
   flex-wrap: wrap;
 }
 
+body main .container .titolo {
+  padding-top: 20px;
+  color: #000000;
+}
+
 .card {
-  width: 280px;
+  flex-basis: calc(100% / 4 - 10px);
   height: 200px;
   margin: 5px;
   position: relative;
+  overflow: hidden;
+}
+
+.card:hover img {
+  transform: scale(1.2);
 }
 
 .card img {
@@ -68,6 +92,8 @@ body main .row {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  transition: 0.4s ease;
+  display: block;
 }
 
 .card .overlay {
@@ -88,10 +114,6 @@ body main .row {
 
 .card .overlay:hover {
   opacity: 0.6;
-}
-
-.card .overlay:hover img {
-  transform: scale(1.5);
 }
 
 .card .overlay svg {

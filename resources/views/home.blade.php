@@ -172,7 +172,9 @@ foreach ($prodotti as $key => $prodotto) {
     <main>
       <div class="container">
         @if (!empty($lunga))
-          <h2>Pasta lunga</h2>
+          <div class="titolo">
+            <h2>La lunga</h2>
+          </div>
           <div class="row lunga">
               @foreach ($lunga as $key => $prodotto)
                 <div class="card">
@@ -191,7 +193,9 @@ foreach ($prodotti as $key => $prodotto) {
         @endif
 
         @if (!empty($corta))
-          <h2>Pasta corta</h2>
+          <div class="titolo">
+            <h2>La corta</h2>
+          </div>
           <div class="row corta">
               @foreach ($corta as $key => $prodotto)
                 <div class="card">
@@ -210,7 +214,9 @@ foreach ($prodotti as $key => $prodotto) {
         @endif
 
         @if (!empty($cortissima))
-          <h2>Pasta cortissima</h2>
+          <div class="titolo">
+            <h2>La cortissima</h2>
+          </div>
           <div class="row cortissima">
               @foreach ($cortissima as $key => $prodotto)
                 <div class="card">
@@ -229,6 +235,20 @@ foreach ($prodotti as $key => $prodotto) {
         @endif
       </div>
     </main>
+
+    <footer>
+      <div class="container">
+        <section>
+
+        </section>
+        <section>
+
+        </section>
+        <section>
+
+        </section>
+      </div>
+    </footer>
 
   </body>
 
