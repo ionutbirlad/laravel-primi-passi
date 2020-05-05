@@ -1,7 +1,4 @@
 .card{
-  width: calc(100% / 4 - 10px);
-  height: 200px;
-  margin: 5px;
   position: relative;
   overflow: hidden;
   &:hover img{

@@ -2,10 +2,9 @@ body{
   padding-top: 150px;
   main{
     .row{
-      display: flex;
-      align-items: center;
-      justify-content: flex-start;
-      flex-wrap: wrap;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      grid-gap: 5px;
       padding: 30px 0;
     }
     background: rgb(85,239,196);

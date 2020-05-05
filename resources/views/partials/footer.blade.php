@@ -1,6 +1,6 @@
 <footer>
   <div class="container">
-    <section>
+    <section class="section one">
       <img id="logo" src="{{asset('img/marchio-sito-test.png')}}" alt="logo molisana">
       <div class="contacts">
         <ul>
@@ -24,7 +24,7 @@
       <img src="{{asset('img/numero-verde.jpg')}}" alt="">
       <img src="{{asset('img/whatsapp.jpg')}}" alt="">
     </section>
-    <section>
+    <section class="section two">
       <div class="upper">
         <h3>PASTIFICIO</h3>
         <ul>
@@ -51,7 +51,7 @@
         </ul>
       </div>
     </section>
-    <section>
+    <section class="section three">
       <div class="upper">
         <h3>COLLEZIONE DA CHEF</h3>
         <ul>
@@ -78,8 +78,8 @@
         </ul>
       </div>
     </section>
-  </div>
     <div class="mountains">
-      {{-- <img src="{{asset('img/mountains.jpg')}}" alt=""> --}}
+      <img src="{{asset('img/mountains.jpg')}}" alt="">
     </div>
+  </div>
 </footer>

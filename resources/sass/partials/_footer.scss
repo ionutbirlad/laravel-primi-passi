@@ -1,49 +1,47 @@
 footer{
-  padding-top: 80px;
+  padding-top: 50px;
   .container{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    section{
-      img:first-child{
-        margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    'section1 section2 section3'
+    'mountains mountains mountains';
+    grid-gap: 15px;
+    .section.one{
+      grid-area: section1;
+      & img:first-child{
+        margin-bottom: 25px;
       }
-      li{
-        line-height: 25px;
-      }
-      .contacts,
-      .socials,
-      .upper{
-        margin-bottom: 20px;
-      }
-      .socials{
-        i{
-          font-size: 35px;
-          color: #b2bec3;
-          margin: 0 10px;
-          transition: 0.3s linear;
-          &:hover{
-            color: #636e72;
-          }
+      i{
+        font-size: 35px;
+        margin: 15px;
+        color: #b2bec3;
+        transition: 0.3s linear;
+        &:hover{
+          color: #636e72;
         }
       }
-      .upper{
-
-      }
-      .lower{
-
-      }
-      h3{
-        margin-bottom: 15px;
+    }
+    .section.two{
+      grid-area: section2;
+    }
+    .section.three{
+      grid-area: section3;
+    }
+    .mountains{
+      grid-area: mountains;
+      img{
+        width: 100%;
       }
     }
   }
-  .mountains{
-    width: 100%;
-    height: 20vh;
-    margin: 0 auto;
-    background-image: url("/img/mountains.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+  .section.one .upper,
+  .section.two .upper,
+  .section.three .upper{
+    margin-bottom: 35px;
+  }
+  li{
+    line-height: 25px;
   }
 }
