@@ -5,6 +5,7 @@ header{
   left: 0;
   z-index: 2;
   background: $primary_color;
+  border-bottom: 1px solid #b2bec3;
   .container{
     .row{
       display: flex;

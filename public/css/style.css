@@ -33,9 +33,8 @@ li {
   list-style: none;
 }
 
-.hidden > svg {
-  width: 0;
-  height: 0;
+.hidden {
+  display: none;
 }
 
 header {
@@ -45,6 +44,7 @@ header {
   left: 0;
   z-index: 2;
   background: #fff;
+  border-bottom: 1px solid #b2bec3;
 }
 
 header .container .row {
@@ -85,11 +85,17 @@ body {
   padding-top: 150px;
 }
 
+body main {
+  background: #55efc4;
+  background: linear-gradient(273deg, rgba(85, 239, 196, 0.6) 0%, rgba(9, 132, 227, 0.6) 66%);
+}
+
 body main .row {
   display: flex;
   align-items: center;
   justify-content: flex-start;
   flex-wrap: wrap;
+  padding: 30px 0;
 }
 
 body main .container .titolo {
@@ -98,7 +104,7 @@ body main .container .titolo {
 }
 
 .card {
-  flex-basis: calc(100% / 4 - 10px);
+  width: calc(100% / 4 - 10px);
   height: 200px;
   margin: 5px;
   position: relative;
@@ -188,5 +194,31 @@ footer .mountains {
   background-image: url("/img/mountains.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+@media all and (max-width: 1200px) {
+  .card {
+    width: calc(100% / 3 - 10px);
+  }
+}
+
+@media all and (max-width: 800px) {
+  .card {
+    width: calc(100% / 2 - 10px);
+  }
+
+  footer {
+    font-size: 0.8rem;
+  }
+}
+
+@media all and (max-width: 420px) {
+  .card {
+    width: 100%;
+  }
+
+  footer {
+    font-size: 0.5rem;
+  }
 }
 
