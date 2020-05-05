@@ -8,3 +8,25 @@
   max-width: 1200px;
   margin: 0 auto;
 }
+
+img{
+  display: block;
+}
+
+i{
+  cursor: pointer;
+}
+
+a{
+  text-decoration: none;
+  color: $primary_font_color;
+}
+
+li{
+  list-style: none;
+}
+
+.hidden > svg{
+  width: 0;
+  height: 0;
+}
