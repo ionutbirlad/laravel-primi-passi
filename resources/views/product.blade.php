@@ -7,7 +7,7 @@
 @extends('layouts.layout')
 
 @section('titolo')
-  Primi passi Laravel
+  {{$prodotto['titolo']}}
 @endsection
 
 @section('style')
@@ -15,13 +15,25 @@
 @endsection
 
 @section('mainContent')
-  <div class="container">
-      <div class="titolo">
-        <h2>La lunga</h2>
+  <div class="container prodotto-singolo">
+    <div class="titolo">
+      <h1>{{$prodotto['titolo']}}</h1>
+    </div>
+    <div class="row">
+      <div class="immagine-prodotto">
+        <img src="{{$prodotto['src-h']}}" alt="">
       </div>
-      <div class="row">
-        <h3>{{$prodotto['titolo']}}</h3>
+    </div>
+    <div class="row">
+      <div class="immagine-prodotto">
+        <img src="{{$prodotto['src-p']}}" alt="">
       </div>
+    </div>
+    <div class="row">
+      <div class="descrizione-prodotto">
+        <p>{!!$prodotto['descrizione']!!}</p>
+      </div>
+    </div>
   </div>
 @endsection
 

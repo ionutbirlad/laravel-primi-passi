@@ -106,6 +106,24 @@ body main .container .titolo {
   color: #000000;
 }
 
+body main .container.prodotto-singolo .titolo {
+  text-align: center;
+  padding: 35px 0;
+}
+
+body main .container.prodotto-singolo .row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 5px;
+  padding: 0;
+}
+
+body main .container.prodotto-singolo .row img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
 .card {
   position: relative;
   overflow: hidden;
