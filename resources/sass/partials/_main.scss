@@ -7,6 +7,9 @@ body{
       grid-gap: 5px;
       padding: 30px 0;
     }
+    .card{
+      animation: soft 1s linear;
+    }
     background: rgb(85,239,196);
     background: linear-gradient(273deg, rgba(85,239,196,0.6) 0%, rgba(9,132,227,0.6) 66%);
     .container{
@@ -27,6 +30,13 @@ body{
           img{
             width: 100%;
             object-fit: contain;
+            animation: soft 1s linear;
+          }
+          .descrizione-prodotto{
+            padding: 40px 0;
+            p{
+              line-height: 25px;
+            }
           }
         }
       }

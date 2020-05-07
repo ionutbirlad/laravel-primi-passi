@@ -29,3 +29,12 @@ li{
 .hidden{
   display: none;
 }
+
+@keyframes soft {
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
