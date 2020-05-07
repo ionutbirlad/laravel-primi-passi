@@ -81,6 +81,10 @@ header .container .row #logo {
   color: #000000;
 }
 
+#menu li.active {
+  background: #12CBC4;
+}
+
 body {
   padding-top: 150px;
 }

@@ -14,5 +14,8 @@
       text-decoration: none;
       color: $primary_font_color;
     }
+    &.active{
+      background: $secondary_color;
+    }
   }
 }
