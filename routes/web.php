@@ -26,3 +26,7 @@ Route::get('/products', function () {
 Route::get('/contacts', function () {
     return view('contacts');
 }) -> name('contatti');
+
+Route::get('/products/{id}', function ($id) {
+    return view('product', compact('id'));
+}) -> name('prodotti.singolo');

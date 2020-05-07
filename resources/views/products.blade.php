@@ -40,7 +40,7 @@ foreach (config('products') as $key => $prodotto) {
             <div class="card">
               <img src="{{$prodotto['src']}}" alt="{{$prodotto['titolo']}}">
               <div class="overlay">
-                <a href="{{$key}}">
+                <a href="{{route('prodotti.singolo', $key)}}">
                   <svg>
                     <use href="#posate"></use>
                   </svg>
@@ -61,7 +61,7 @@ foreach (config('products') as $key => $prodotto) {
             <div class="card">
               <img src="{{$prodotto['src']}}" alt="{{$prodotto['titolo']}}">
               <div class="overlay">
-                <a href="{{$key}}">
+                <a href="{{route('prodotti.singolo', $key)}}">
                   <svg>
                     <use href="#posate"></use>
                   </svg>
@@ -82,7 +82,7 @@ foreach (config('products') as $key => $prodotto) {
             <div class="card">
               <img src="{{$prodotto['src']}}" alt="{{$prodotto['titolo']}}">
               <div class="overlay">
-                <a href="{{$key}}">
+                <a href="{{route('prodotti.singolo', $key)}}">
                   <svg>
                     <use href="#posate"></use>
                   </svg>
