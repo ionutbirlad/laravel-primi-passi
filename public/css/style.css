@@ -110,6 +110,7 @@ body {
 }
 
 body main {
+  position: relative;
   background: #55efc4;
   background: linear-gradient(273deg, rgba(85, 239, 196, 0.6) 0%, rgba(9, 132, 227, 0.6) 66%);
 }
@@ -157,6 +158,35 @@ body main .container.prodotto-singolo .row .descrizione-prodotto {
 
 body main .container.prodotto-singolo .row .descrizione-prodotto p {
   line-height: 25px;
+}
+
+body main .previous,
+body main .forward {
+  position: absolute;
+  font-size: 30px;
+  width: 45px;
+  height: 45px;
+  padding: 5px;
+  background: #dfe6e980;
+  border-radius: 5px;
+  transition: 0.3s linear;
+}
+
+body main .previous:hover,
+body main .forward:hover {
+  background: #dfe6e9;
+}
+
+body main .previous {
+  top: 50%;
+  left: 0;
+  transform: translateY(50%);
+}
+
+body main .forward {
+  top: 50%;
+  right: 0;
+  transform: translateY(50%);
 }
 
 .card {

@@ -35,6 +35,9 @@
       </div>
     </div>
   </div>
+
+  {{-- <div class="previous"> <a href="{{(!empty($id)) ? 'route("prodotti.singolo", ($id - 1))'}}"><i class="fas fa-arrow-left"></i></a> </div>
+  <div class="forward"> <a href="{{route('prodotti.singolo', ($id + 1))}}"><i class="fas fa-arrow-right"></i></a> </div> --}}
 @endsection
 
 @section('scripts')
